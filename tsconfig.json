@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "target": "es2022",
+    "preserveSymlinks": true,
+    "lib": ["es2021"],
+    "module": "esnext",
+    "checkJs": false,
+    "sourceMap": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "outDir": "dist",
+    "useUnknownInCatchVariables": true,
+    "skipLibCheck": true
+  },
+  "include": ["./lib", "./bin", "./__tests__"],
+  "exclude": ["./dist", "node_modules"]
+}

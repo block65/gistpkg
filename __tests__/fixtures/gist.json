@@ -1,0 +1,112 @@
+{
+  "url": "https://api.github.com/gists/80979ac8e36fbb40aba44d7115cbf600",
+  "forks_url": "https://api.github.com/gists/80979ac8e36fbb40aba44d7115cbf600/forks",
+  "commits_url": "https://api.github.com/gists/80979ac8e36fbb40aba44d7115cbf600/commits",
+  "id": "80979ac8e36fbb40aba44d7115cbf600",
+  "node_id": "MDQ6R2lzdDgwOTc5YWM4ZTM2ZmJiNDBhYmE0NGQ3MTE1Y2JmNjAw",
+  "git_pull_url": "https://gist.github.com/80979ac8e36fbb40aba44d7115cbf600.git",
+  "git_push_url": "https://gist.github.com/80979ac8e36fbb40aba44d7115cbf600.git",
+  "html_url": "https://gist.github.com/80979ac8e36fbb40aba44d7115cbf600",
+  "files": {
+    "readdir.ts": {
+      "filename": "readdir.ts",
+      "type": "video/MP2T",
+      "language": "TypeScript",
+      "raw_url": "https://gist.githubusercontent.com/maxholman/80979ac8e36fbb40aba44d7115cbf600/raw/29fc08cb60c5106e9a91de3daa76601cde7f401f/readdir.ts",
+      "size": 343,
+      "truncated": false,
+      "content": "import { readdirSync, statSync } from 'fs';\nimport { join } from 'path';\n\nfunction recursiveReaddirSync(dir: string): string[] {\n  const files = readdirSync(dir);\n  return files.flatMap((file) => {\n    const path = join(dir, file);\n    if (statSync(path).isDirectory()) {\n      return recursiveReaddirSync(path);\n    }\n    return path;\n  });\n}"
+    }
+  },
+  "public": true,
+  "created_at": "2021-02-01T10:24:12Z",
+  "updated_at": "2021-02-01T10:25:00Z",
+  "description": "Recursive synchronous readdir typescript",
+  "comments": 0,
+  "user": null,
+  "comments_url": "https://api.github.com/gists/80979ac8e36fbb40aba44d7115cbf600/comments",
+  "owner": {
+    "login": "maxholman",
+    "id": 250517,
+    "node_id": "MDQ6VXNlcjI1MDUxNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/250517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maxholman",
+    "html_url": "https://github.com/maxholman",
+    "followers_url": "https://api.github.com/users/maxholman/followers",
+    "following_url": "https://api.github.com/users/maxholman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maxholman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maxholman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maxholman/subscriptions",
+    "organizations_url": "https://api.github.com/users/maxholman/orgs",
+    "repos_url": "https://api.github.com/users/maxholman/repos",
+    "events_url": "https://api.github.com/users/maxholman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maxholman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "forks": [],
+  "history": [
+    {
+      "user": {
+        "login": "maxholman",
+        "id": 250517,
+        "node_id": "MDQ6VXNlcjI1MDUxNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/250517?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maxholman",
+        "html_url": "https://github.com/maxholman",
+        "followers_url": "https://api.github.com/users/maxholman/followers",
+        "following_url": "https://api.github.com/users/maxholman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maxholman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maxholman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maxholman/subscriptions",
+        "organizations_url": "https://api.github.com/users/maxholman/orgs",
+        "repos_url": "https://api.github.com/users/maxholman/repos",
+        "events_url": "https://api.github.com/users/maxholman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maxholman/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "version": "6a764da723de747fee56beede967530eec2e0618",
+      "committed_at": "2021-02-01T10:24:59Z",
+      "change_status": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+      },
+      "url": "https://api.github.com/gists/80979ac8e36fbb40aba44d7115cbf600/6a764da723de747fee56beede967530eec2e0618"
+    },
+    {
+      "user": {
+        "login": "maxholman",
+        "id": 250517,
+        "node_id": "MDQ6VXNlcjI1MDUxNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/250517?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maxholman",
+        "html_url": "https://github.com/maxholman",
+        "followers_url": "https://api.github.com/users/maxholman/followers",
+        "following_url": "https://api.github.com/users/maxholman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maxholman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maxholman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maxholman/subscriptions",
+        "organizations_url": "https://api.github.com/users/maxholman/orgs",
+        "repos_url": "https://api.github.com/users/maxholman/repos",
+        "events_url": "https://api.github.com/users/maxholman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maxholman/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "version": "e0f65e0a0c6e3f111c52379ef3e162542f70bd59",
+      "committed_at": "2021-02-01T10:24:12Z",
+      "change_status": {
+        "total": 12,
+        "additions": 12,
+        "deletions": 0
+      },
+      "url": "https://api.github.com/gists/80979ac8e36fbb40aba44d7115cbf600/e0f65e0a0c6e3f111c52379ef3e162542f70bd59"
+    }
+  ],
+  "truncated": false
+}
