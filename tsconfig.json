@@ -16,7 +16,8 @@
     "strictNullChecks": true,
     "outDir": "dist",
     "useUnknownInCatchVariables": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "removeComments": true
   },
   "include": ["./lib", "./bin", "./__tests__"],
   "exclude": ["./dist", "node_modules"]

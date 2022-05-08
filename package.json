@@ -1,6 +1,6 @@
 {
   "name": "@block65/gistpkg",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": false,
   "license": "UNLICENSED",
   "sideEffects": false,
@@ -8,22 +8,9 @@
   "bin": {
     "gistpkg": "./dist/bin/gistpkg.js"
   },
-  "exports": {
-    ".": {
-      "default": "./dist/src/index.js"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "default": [
-        "./dist/lib/index.js"
-      ]
-    }
-  },
   "files": [
     "dist/bin/*.js",
-    "dist/lib/*.js",
-    "dist/lib/*.d.ts"
+    "dist/lib/*.js"
   ],
   "dependencies": {
     "@block65/logger": "^12.0.0-rc.16",
