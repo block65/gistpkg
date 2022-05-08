@@ -9,12 +9,12 @@ node_modules: yarn.lock
 yarn.lock: package.json
 	yarn install --frozen-lockfile
 
-.PHONY: node_modules clean
-clean:
+.PHONY: clean
+clean: node_modules
 	yarn tsc -b --clean 
 
-.PHONY: node_modules test
-test:
+.PHONY: test
+test: node_modules
 	NODE_OPTIONS=--experimental-vm-modules yarn jest 
 
 dist: node_modules tsconfig.json $(SRCS)
